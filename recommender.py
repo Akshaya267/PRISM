@@ -1,5 +1,5 @@
 from typing import List
-from app.models.schemas import Insight, Recommendation
+from schemas import Insight, Recommendation
 
 def generate_recommendations(insights: List[Insight]) -> List[Recommendation]:
     """
