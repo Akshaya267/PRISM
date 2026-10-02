@@ -1,4 +1,4 @@
-from app.models.schemas import EvidenceDetail, CalculationDetail, ContributionSegment
+from schemas import EvidenceDetail, CalculationDetail, ContributionSegment
 from typing import List, Dict, Any
 
 def build_evidence_trail(
