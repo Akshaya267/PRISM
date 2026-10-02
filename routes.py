@@ -1,13 +1,13 @@
 import pandas as pd
 from typing import Dict, Any, List, Optional
 from fastapi import APIRouter, UploadFile, File, HTTPException
-from app.models.schemas import DataOverview, Insight, Recommendation, QueryRequest, QueryResponse, EvidenceDetail
-from app.data_ingestion.ingest import load_dataset
-from app.data_profiling.profiler import profile_dataset
-from app.insight_engine.insights import generate_insights
-from app.recommendations.recommender import generate_recommendations
-from app.query_engine.ask_prism import answer_query
-from app.demo.demo_data import generate_demo_dataset
+from schemas import DataOverview, Insight, Recommendation, QueryRequest, QueryResponse, EvidenceDetail
+from ingest import load_dataset
+from profiler import profile_dataset
+from insights import generate_insights
+from recommender import generate_recommendations
+from ask_prism import answer_query
+from demo_data import generate_demo_dataset
 
 router = APIRouter(prefix="/api")
 
