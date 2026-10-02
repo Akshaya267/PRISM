@@ -1,11 +1,11 @@
 import pytest
 import pandas as pd
-from app.data_ingestion.ingest import load_dataset
-from app.data_profiling.profiler import profile_dataset, infer_semantic_role
-from app.analytics.engine import analyze_trends, analyze_contributions, detect_anomalies
-from app.evidence.tracer import build_evidence_trail
-from app.recommendations.recommender import generate_recommendations
-from app.demo.demo_data import generate_demo_dataset
+from ingest import load_dataset
+from profiler import profile_dataset, infer_semantic_role
+from engine import analyze_trends, analyze_contributions, detect_anomalies
+from tracer import build_evidence_trail
+from recommender import generate_recommendations
+from demo_data import generate_demo_dataset
 
 def test_demo_dataset_generation():
     df = generate_demo_dataset()
