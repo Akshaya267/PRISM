@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #080C14;
+  --bg-card: rgba(15, 23, 42, 0.75);
+  --border-card: rgba(255, 255, 255, 0.08);
+  --accent-cyan: #06B6D4;
+  --accent-violet: #8B5CF6;
+  --accent-pink: #EC4899;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #080C14;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B111D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* PRISM Optical Refraction Gradient Accent Line */
+.prism-line {
+  height: 2px;
+  background: linear-gradient(90deg, #EC4899 0%, #8B5CF6 33%, #3B82F6 66%, #06B6D4 100%);
+}
+
+.prism-glow {
+  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.15);
+}
+
+.prism-card {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.prism-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+.glass-modal {
+  background: rgba(11, 17, 29, 0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Gradient Text Utilities */
+.gradient-text-prism {
+  background: linear-gradient(135deg, #F8FAFC 0%, #CBD5E1 50%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-accent {
+  background: linear-gradient(90deg, #38BDF8 0%, #818CF8 50%, #C084FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Pulsing Animation */
+@keyframes subtlePulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-subtle-pulse {
+  animation: subtlePulse 4s infinite ease-in-out;
+}
