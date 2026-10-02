@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import uvicorn
-from app.api.routes import router
+from routes import router
 
 app = FastAPI(
     title="PRISM API",
