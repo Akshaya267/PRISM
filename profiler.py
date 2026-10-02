@@ -2,7 +2,7 @@ import re
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, List, Optional, Tuple
-from app.models.schemas import ColumnProfile, DataOverview
+from schemas import ColumnProfile, DataOverview
 
 def infer_semantic_role(col_name: str, series: pd.Series) -> str:
     name_clean = col_name.lower().replace("_", "").replace(" ", "").replace("-", "")
